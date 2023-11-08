@@ -1,0 +1,5 @@
+myfile = open('nums.txt', 'r', encoding='utf-8')
+text = myfile.read().split()
+text = list(map(int, text))
+print(sum(text))
+myfile.close()
